@@ -1,11 +1,14 @@
 import './App.scss';
 import AdventureCardsList from './components/AdventureCardsList';
-import adventureCards from './mocks/adventure-cards'
+import adventureCards from './mocks/adventure-cards';
+import Section from './components/Section';
 
 function App() {
   return (
     <>
-      <AdventureCardsList cardsList={adventureCards} />
+      <Section subheading="Subheading" heading="Heading" isCentered>
+        <AdventureCardsList cardsList={adventureCards} />
+      </Section>
     </>
   );
 }
