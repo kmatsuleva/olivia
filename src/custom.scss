@@ -1,4 +1,15 @@
-// variables
-$primary: #9a795d;
+// #region variables
+
+// Color system
+
+$theme-colors: (
+    "primary": #9a795d
+);
+
+// Cards
+
+$card-height: 100% !default;
+
+// #endregion variables
 
 @import "~bootstrap/scss/bootstrap";
