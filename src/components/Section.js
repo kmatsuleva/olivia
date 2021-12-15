@@ -5,9 +5,17 @@ import PropTypes from 'prop-types';
 const Section = ({ children, subheading, heading, isCentered }) => {
     return (
         <section className={isCentered ? "text-center" : ""}>
+            {
+                subheading ? (
+                    <span>{subheading}</span>
+                ) : ""
+            }
+            {
+                heading ? (
+                    <h2>{heading}</h2>
+                ) : ""
+            }
             <Container>
-                <span>{subheading}</span>
-                <h2>{heading}</h2>
                 {children}
             </Container>
         </section >
