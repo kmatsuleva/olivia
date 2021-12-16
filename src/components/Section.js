@@ -1,8 +1,10 @@
 import React from 'react';
-import { Container } from 'react-bootstrap'
 import PropTypes from 'prop-types';
 
-const Section = ({ children, subheading, heading, isCentered }) => {
+const Section = ({ children, subheading, heading, isFullWidth, isCentered }) => {
+    // todo: refactor - what if props has value undefined ? 
+    // it's when prop is not passed in the parent component 
+    // currently, we are entering 'false' code block
     return (
         <section className={isCentered ? "text-center" : ""}>
             {
@@ -15,10 +17,11 @@ const Section = ({ children, subheading, heading, isCentered }) => {
                     <h2>{heading}</h2>
                 ) : ""
             }
-            <Container>
+
+            <div className={isFullWidth ? "container-fluid" : "container"}>
                 {children}
-            </Container>
-        </section >
+            </div>
+        </section>
     );
 }
 
@@ -29,7 +32,8 @@ Section.propTypes = {
     ]).isRequired,
     subheading: PropTypes.string,
     heading: PropTypes.string,
-    isCentered: PropTypes.bool.isRequired
+    isFullWidth: PropTypes.bool,
+    isCentered: PropTypes.bool
 }
 
 export default Section;

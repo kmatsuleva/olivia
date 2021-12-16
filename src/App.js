@@ -6,7 +6,7 @@ import Section from './components/Section';
 function App() {
   return (
     <>
-      <Section subheading="Subheading" heading="Heading" isCentered>
+      <Section subheading="Subheading" heading="Heading" isFullWidth={false} isCentered>
         <AdventureCardsList cardsList={adventureCards} />
       </Section>
     </>
