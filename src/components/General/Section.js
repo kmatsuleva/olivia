@@ -6,7 +6,7 @@ const Section = ({ children, subheading, heading, isFullWidth, isCentered }) => 
     // it's when prop is not passed in the parent component 
     // currently, we are entering 'false' code block
     return (
-        <section className={isCentered ? "text-center" : ""}>
+        <section className={`py-5 ${(isCentered ? "text-center" : "")}`}>
             {
                 subheading ? (
                     <span>{subheading}</span>
