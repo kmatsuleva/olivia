@@ -10,7 +10,7 @@ function App() {
       <Section subheading="Subheading" heading="Heading" isFullWidth={false} isCentered>
         <AdventureCardsList cardsList={adventureCards} />
       </Section>
-      <Section>
+      <Section heading="Contact Us" isFullWidth={false} isCentered={false}>
         <ContactUsForm />
       </Section>
     </>
