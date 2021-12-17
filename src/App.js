@@ -2,6 +2,7 @@ import './App.scss';
 import AdventureCardsList from './components/Cards/AdventureCardsList';
 import adventureCards from './mocks/adventure-cards';
 import Section from './components/General/Section';
+import ContactUsForm from './components/Form/ContactUsForm';
 
 function App() {
   return (
@@ -10,10 +11,7 @@ function App() {
         <AdventureCardsList cardsList={adventureCards} />
       </Section>
       <Section>
-      </Section>
-      <Section>
-      </Section>
-      <Section>
+        <ContactUsForm />
       </Section>
     </>
   );
