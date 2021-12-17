@@ -7,18 +7,17 @@ const Section = ({ children, subheading, heading, isFullWidth, isCentered }) => 
     // currently, we are entering 'false' code block
     return (
         <section className={`py-5 ${(isCentered ? "text-center" : "")}`}>
-            {
-                subheading ? (
-                    <span>{subheading}</span>
-                ) : ""
-            }
-            {
-                heading ? (
-                    <h2>{heading}</h2>
-                ) : ""
-            }
-
             <div className={isFullWidth ? "container-fluid" : "container"}>
+                {
+                    subheading ? (
+                        <span>{subheading}</span>
+                    ) : ""
+                }
+                {
+                    heading ? (
+                        <h2>{heading}</h2>
+                    ) : ""
+                }
                 {children}
             </div>
         </section>
