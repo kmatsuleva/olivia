@@ -53,7 +53,8 @@ const ContactUsForm = () => {
           aria-describedby="characters-counter"
         />
         <Form.Text id="characters-counter" muted>
-          Characters: 2000
+          Characters: 2000  
+          {/* todo: add logic for counting characters */}
         </Form.Text>
       </Form.Group>
       <Button type="submit">Contact Us</Button>

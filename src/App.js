@@ -1,18 +1,16 @@
+import { Routes, Route } from "react-router-dom";
 import './App.scss';
-import AdventureCardsList from './components/Cards/AdventureCardsList';
-import adventureCards from './mocks/adventure-cards';
-import Section from './components/General/Section';
-import ContactUsForm from './components/Form/ContactUsForm';
+import Contact from "./pages/Contact";
+import Home from './pages/Home';
+
 
 function App() {
   return (
     <>
-      <Section subheading="Subheading" heading="Heading" isFullWidth={false} isCentered>
-        <AdventureCardsList cardsList={adventureCards} />
-      </Section>
-      <Section heading="Contact Us" isFullWidth={false} isCentered={false}>
-        <ContactUsForm />
-      </Section>
+     <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="about" element={<Contact />} />
+      </Routes>
     </>
   );
 }
