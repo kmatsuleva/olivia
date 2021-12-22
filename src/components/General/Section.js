@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './styles.scss'
 
 const Section = ({ children, subheading, heading, isFullWidth, isCentered }) => {
     // todo: refactor - what if props has value undefined ? 
@@ -8,7 +9,7 @@ const Section = ({ children, subheading, heading, isFullWidth, isCentered }) => 
     return (
         <section className={`py-5 ${isCentered ? "text-center" : ""}`}>
             <div className={isFullWidth ? "container-fluid" : "container"}>
-                { subheading ? <span className="subheading">{subheading}</span> : null }
+                { subheading ? <div className="subheading text-uppercase">{subheading}</div> : null }
                 { heading ? <h2>{heading}</h2> : null }
                 {children}
             </div>

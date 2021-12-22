@@ -1,20 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Row } from 'react-bootstrap';
-import AventureCard from './AventureCard';
+import IconCard from './IconCard';
+import './styles.scss';
 
-const AventureCardsList = ({ cardsList }) => {
+const IconCardList = ({ cardsList }) => {
     return (
         <Row>
             {cardsList.map(
-                card => <AventureCard key={card.id} {...card} />
+                card => <IconCard key={card.id} {...card} />
             )}
         </Row>
     );
 }
 
-AventureCardsList.propTypes = {
+IconCardList.propTypes = {
     cardsList: PropTypes.array
 }
 
-export default AventureCardsList;
+export default IconCardList;
