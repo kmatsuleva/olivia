@@ -1,6 +1,5 @@
 import React from 'react';
-import { Row } from 'react-bootstrap';
-import { Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 
 import 'swiper/swiper.scss';
 import 'swiper/modules/autoplay/autoplay.scss';
@@ -19,19 +18,29 @@ const Testimonials = () => {
             "delay": 5000,
             "disableOnInteraction": false
           }}
-          centered={true}
           navigation={true}
-          pagination={{
-            "dynamicBullets": true
-          }}
           loop={true}
           onSlideChange={() => console.log('slide change')}
           onSwiper={(swiper) => console.log(swiper)}
         >
-          <SwiperSlide>Slide 1</SwiperSlide>
-          <SwiperSlide>Slide 2</SwiperSlide>
-          <SwiperSlide>Slide 3</SwiperSlide>
-          <SwiperSlide>Slide 4</SwiperSlide>
+          <SwiperSlide>
+            <blockquote className="blockquote">
+              <p className="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+              <footer className="blockquote-footer"> <cite title="Source Title">Source Title</cite></footer>
+            </blockquote>
+          </SwiperSlide>
+          <SwiperSlide>
+            <blockquote className="blockquote">
+              <p className="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+              <footer className="blockquote-footer"> <cite title="Source Title">Source Title</cite></footer>
+            </blockquote>
+          </SwiperSlide>
+          <SwiperSlide>
+            <blockquote className="blockquote">
+              <p className="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+              <footer className="blockquote-footer"> <cite title="Source Title">Source Title</cite></footer>
+            </blockquote>
+          </SwiperSlide>
         </Swiper>
       </Col>
     </Row>
