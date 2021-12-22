@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, Col } from 'react-bootstrap';
 
-const AdventureCard = ({ title, summary, cta }) => {
+const AventureCard = ({ title, summary, cta }) => {
     return (
         <Col lg={4} md={6}>
             <Card>
@@ -15,4 +15,4 @@ const AdventureCard = ({ title, summary, cta }) => {
     );
 }
 
-export default AdventureCard;
+export default AventureCard;
