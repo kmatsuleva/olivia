@@ -1,10 +1,11 @@
 import React from 'react';
 import { Card, Col } from 'react-bootstrap';
 
-const AventureCard = ({ title, summary, cta }) => {
+const AventureCard = ({ image, title, summary, cta }) => {
     return (
         <Col lg={4} md={6}>
-            <Card>
+            <Card className="card-type-1">
+            <Card.Img variant="top" src={image} />
                 <Card.Body>
                     <Card.Title>{title}</Card.Title>
                     <Card.Text>{summary}</Card.Text>
