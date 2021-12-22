@@ -1,0 +1,24 @@
+section {
+  &.text-center {
+    .subheading {
+      margin-bottom: 0.25rem;
+    }
+
+    h2 {
+      margin-bottom: 3rem;
+    }
+  }
+
+  .subheading {
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+
+.subheading {
+  font-family: "Karla", sans-serif;
+}

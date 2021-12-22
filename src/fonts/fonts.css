@@ -1,4 +1,27 @@
 @font-face {
-    font-family: "Bentham";
-    src: url(./Bentham-Regular.ttf) format('ttf');
+    font-family: 'Bentham';
+    src: url('./Bentham.woff2') format('woff2');
 }
+
+@font-face {
+    font-family: 'Satisfy';
+    src: url('./Satisfy.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: url('./Karla.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Palanquin';
+    src: url('./Palanquin-Light.woff2') format('woff2');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Palanquin';
+    src: url('./Palanquin-Regular.woff2') format('woff2');
+    font-weight: 400;
+}
+

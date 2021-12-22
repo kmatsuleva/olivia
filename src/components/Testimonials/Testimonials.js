@@ -1,12 +1,12 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 
-import 'swiper/swiper.scss';
-import 'swiper/modules/autoplay/autoplay.scss';
-import 'swiper/modules/navigation/navigation.scss';
+import "swiper/css";
+import "swiper/css/navigation"
 
-import { Swiper, SwiperSlide } from 'swiper/react/swiper-react.js';
+import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Autoplay, Navigation } from "swiper";
+
 SwiperCore.use([Autoplay, Navigation]);
 
 const Testimonials = () => {
@@ -14,37 +14,22 @@ const Testimonials = () => {
     <Row>
       <Col md={6}>
         <Swiper
+          spaceBetween={50}
+          navigation={true}
           autoplay={{
-            "delay": 5000,
+            "delay": 2500,
             "disableOnInteraction": false
           }}
-          navigation={true}
-          loop={true}
-          onSlideChange={() => console.log('slide change')}
           onSwiper={(swiper) => console.log(swiper)}
+          onSlideChange={() => console.log('slide change')}
         >
-          <SwiperSlide>
-            <blockquote className="blockquote">
-              <p className="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-              <footer className="blockquote-footer"> <cite title="Source Title">Source Title</cite></footer>
-            </blockquote>
-          </SwiperSlide>
-          <SwiperSlide>
-            <blockquote className="blockquote">
-              <p className="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-              <footer className="blockquote-footer"> <cite title="Source Title">Source Title</cite></footer>
-            </blockquote>
-          </SwiperSlide>
-          <SwiperSlide>
-            <blockquote className="blockquote">
-              <p className="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-              <footer className="blockquote-footer"> <cite title="Source Title">Source Title</cite></footer>
-            </blockquote>
-          </SwiperSlide>
+          <SwiperSlide>Slide 1</SwiperSlide>
+          <SwiperSlide>Slide 2</SwiperSlide>
+          <SwiperSlide>Slide 3</SwiperSlide>
+          <SwiperSlide>Slide 4</SwiperSlide>
         </Swiper>
       </Col>
     </Row>
-
   );
 };
 
