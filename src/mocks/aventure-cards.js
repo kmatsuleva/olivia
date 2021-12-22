@@ -1,4 +1,4 @@
-const adventureCards = [
+const aventureCards = [
     {
         id: 1,
         title: 'Lorem ipsum',
@@ -19,4 +19,4 @@ const adventureCards = [
     }
 ];
 
-export default adventureCards;
+export default aventureCards;
