@@ -1,27 +1,28 @@
 @font-face {
-    font-family: 'Bentham';
-    src: url('./Bentham.woff2') format('woff2');
+  font-family: "Bentham";
+  src: url("./Bentham.woff2") format("woff2");
 }
 
 @font-face {
-    font-family: 'Satisfy';
-    src: url('./Satisfy.woff2') format('woff2');
+  font-family: "Satisfy";
+  src: url("./Satisfy.woff2") format("woff2");
 }
 
 @font-face {
-    font-family: 'Karla';
-    src: url('./Karla.woff2') format('woff2');
+  font-family: "Karla";
+  src: url("./Karla.woff2") format("woff2");
 }
 
 @font-face {
-    font-family: 'Palanquin';
-    src: url('./Palanquin-Light.woff2') format('woff2');
-    font-weight: 300;
+  font-family: "Palanquin";
+  src: url("./Palanquin-Light.woff2") format("woff2"),
+       url("./Palanquin-Light.woff") format("woff");
+  font-weight: 300;
 }
 
 @font-face {
-    font-family: 'Palanquin';
-    src: url('./Palanquin-Regular.woff2') format('woff2');
-    font-weight: 400;
+  font-family: "Palanquin";
+  src: url("./Palanquin-Regular.woff2") format("woff2"),
+       url("./Palanquin-Regular.woff") format("woff");
+  font-weight: 400;
 }
-
