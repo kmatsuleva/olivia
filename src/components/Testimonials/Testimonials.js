@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Row, Col } from 'react-bootstrap';
 
 import "swiper/css";
@@ -34,5 +35,9 @@ const Testimonials = ({ testimonials }) => {
     </Row>
   );
 };
+
+Testimonials.propTypes = {
+  cardsList: PropTypes.array
+}
 
 export default Testimonials;
