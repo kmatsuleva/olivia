@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import OverviewCardList from '../components/Cards/OverviewCardList';
 import aventureCards from '../mocks/aventure-cards';
+import testimonials from '../mocks/testimonials';
 import Section from '../components/General/Section';
 import Testimonials from '../components/Testimonials/Testimonials';
 
@@ -17,7 +18,7 @@ const Home = () => {
                     <OverviewCardList cardsList={aventureCards} />
                 </Section>
                 <Section subheading="Testimonials" heading="Client success stories" isFullWidth={false} isCentered={false}>
-                    <Testimonials />
+                    <Testimonials testimonials={testimonials}/>
                 </Section>
             </main>
             <footer></footer>
