@@ -1,10 +1,24 @@
+@import "../../vendor/bootstrap/bootstrap.scss";
+
 .icon-card {
   border-radius: 280px 280px 0 0;
   overflow: hidden;
 
   .icon-card__img {
-    height: 350px;
+    height: 438px;
     background-size: cover;
-    background-position-y: bottom;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .icon-card__icon {
+    background-color: $primary;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    transform: translateY(50%);
   }
 }

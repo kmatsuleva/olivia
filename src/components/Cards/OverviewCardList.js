@@ -1,21 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Row } from 'react-bootstrap';
-import IconCard from './IconCard';
+import OverviewCard from './OverviewCard';
 import './styles.scss';
 
-const IconCardList = ({ cardsList }) => {
+const OverviewCardList = ({ cardsList }) => {
     return (
         <Row>
             {cardsList.map(
-                card => <IconCard key={card.id} {...card} />
+                card => <OverviewCard key={card.id} {...card} />
             )}
         </Row>
     );
 }
 
-IconCardList.propTypes = {
+OverviewCardList.propTypes = {
     cardsList: PropTypes.array
 }
 
-export default IconCardList;
+export default OverviewCardList;

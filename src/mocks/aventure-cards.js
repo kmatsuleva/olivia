@@ -1,21 +1,25 @@
+import image1 from '../images/cards/card-1.jpg';
+import image2 from '../images/cards/card-2.jpg';
+import image3 from '../images/cards/card-3.jpg';
+
 const aventureCards = [
     {
         id: 1,
-        image: 'https://images.unsplash.com/photo-1584465889075-91d745be4a3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80',
+        image: image1,
         title: 'Lorem ipsum',
         summary: 'Dolor sit amet, consectetur adipiscing elit. Nullam ut massa lacus. Aliquam erat enim, viverra sed justo eget, dictum ornare nibh.',
         cta: 'Read More'
     },
     {
         id: 2,
-        image: 'https://images.unsplash.com/photo-1524250502761-1ac6f2e30d43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Z2lybCUyMGFuZCUyMGJyZWFrZmFzdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60',
+        image: image2,
         title: 'Aenean a sodales',
         summary: 'Integer elit turpis, mattis at sem et, finibus pulvinar felis. Ut dolor felis, convallis ac mollis eu, ultrices id est.',
         cta: 'Read More'
     },
     {
         id: 3,
-        image: 'https://images.unsplash.com/photo-1584465889075-91d745be4a3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80',
+        image: image3,
         title: 'Fusce pulvinar',
         summary: 'Aliquam auctor enim non urna eleifend, in congue turpis placerat. Donec nulla libero, facilisis a neque sed, pretium scelerisque neque.',
         cta: 'Read More'
