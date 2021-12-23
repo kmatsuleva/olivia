@@ -1,16 +1,20 @@
 import { Routes, Route } from "react-router-dom";
 import './App.scss';
-import Contact from "./pages/Contact";
+import Header from "./components/Header/Header";
 import Home from './pages/Home';
-
+import Contact from "./pages/Contact";
 
 function App() {
   return (
     <>
-     <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="contact" element={<Contact />} />
-      </Routes>
+      <Header />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="contact" element={<Contact />} />
+        </Routes>
+      </main>
+      <footer></footer>
     </>
   );
 }
