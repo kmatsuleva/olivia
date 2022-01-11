@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
+import Textarea from "../General/Textarea";
 
 const ContactUsForm = () => {
   const [userData, setUserData] = useState({
     name: "",
-    email: "",
-    message: ""
+    email: ""
   });
 
   const getUserInput = (e) => {
@@ -23,7 +23,7 @@ const ContactUsForm = () => {
 
   return (
     <Form onSubmit={getUserInput}>
-      <Form.Group controlId="exampleForm.ControlInput1">
+      <Form.Group>
         <Form.Label>Name</Form.Label>
         <Form.Control
           type="text"
@@ -41,22 +41,10 @@ const ContactUsForm = () => {
           onChange={handleInputChange}
         />
       </Form.Group>
-      <Form.Group controlId="exampleForm.ControlTextarea1">
-        <Form.Label>Message</Form.Label>
-        <Form.Control
-          as="textarea"
-          rows={3}
-          name="message"
-          placeholder="Type your message here"
-          value={userData.message}
-          onChange={handleInputChange}
-          aria-describedby="characters-counter"
-        />
-        <Form.Text id="characters-counter" muted>
-          Characters: 2000  
-          {/* todo: add logic for counting characters */}
-        </Form.Text>
-      </Form.Group>
+      <Textarea
+        label="Message"
+        placeholder="Type your message here"
+        limit="2000" />
       <Button type="submit">Contact Us</Button>
     </Form>
   );
