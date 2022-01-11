@@ -19,7 +19,7 @@ const ContactUsForm = () => {
     setUserData({
       ...userData, [name]: value
     });
-  }
+  };
 
   return (
     <Form onSubmit={getUserInput}>
@@ -44,7 +44,8 @@ const ContactUsForm = () => {
       <Textarea
         label="Message"
         placeholder="Type your message here"
-        limit="2000" />
+        limit="2000"
+      />
       <Button type="submit">Contact Us</Button>
     </Form>
   );
