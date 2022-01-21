@@ -38,6 +38,6 @@ const Testimonials = ({ testimonials }) => {
 
 Testimonials.propTypes = {
   cardsList: PropTypes.array
-}
+};
 
 export default Testimonials;

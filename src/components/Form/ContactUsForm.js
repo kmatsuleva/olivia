@@ -23,6 +23,7 @@ const ContactUsForm = () => {
 
   return (
     <Form onSubmit={getUserInput}>
+      {/* todo: currently only name and email are passed in conslole, without textarea input */}
       <Form.Group>
         <Form.Label>Name</Form.Label>
         <Form.Control
