@@ -7,12 +7,14 @@ import Testimonials from '../components/Testimonials/Testimonials';
 const Home = () => {
     return (
         <>
-            <Section subheading="Work with me" heading="Choose your aventure" isFullWidth={false} isCentered>
-                <OverviewCardList cardsList={aventureCards} />
-            </Section>
-            <Section subheading="Testimonials" heading="Client success stories" isFullWidth={false} isCentered={false}>
-                <Testimonials testimonials={testimonials} />
-            </Section>
+            <main>
+                <Section subheading="Work with me" heading="Choose your aventure" isFullWidth={false} isCentered>
+                    <OverviewCardList cardsList={aventureCards} />
+                </Section>
+                <Section subheading="Testimonials" heading="Client success stories" isFullWidth={false} isCentered={false}>
+                    <Testimonials testimonials={testimonials}/>
+                </Section>
+            </main>
         </>
     );
 }
