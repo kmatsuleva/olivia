@@ -14,7 +14,7 @@ const Textarea = ({ label, placeholder, limit }) => {
 
   return (
     <Form.Group>
-      {label ? <Form.Label>{label}</Form.Label> : null}
+      {label && <Form.Label>{label}</Form.Label>}
       <Form.Control
         as="textarea"
         rows={6}
